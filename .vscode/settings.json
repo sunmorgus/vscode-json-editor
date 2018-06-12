@@ -1,0 +1,37 @@
+{
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "search.exclude": {
+        "out": true,
+        "**/node_modules": true
+    },
+    "tslint.autoFixOnSave": true,
+    "tslint.ignoreDefinitionFiles": true,
+    "cSpell.words": [
+        "Affordance",
+        "Logpoints",
+        "appservice",
+        "azureappservice",
+        "azurecr",
+        "azureextensionui",
+        "azurekudu",
+        "azurenodelogpoints",
+        "azurenodelogpointsnightly",
+        "azuretools",
+        "symbol-explorer",
+        "debugadapter",
+        "etag",
+        "logpoint",
+        "mailto",
+        "navigate",
+        "opencode",
+        "repo",
+        "repos",
+        "runtimes",
+        "symbol",
+        "vsce"
+    ]
+}

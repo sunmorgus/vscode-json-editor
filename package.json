@@ -1,0 +1,46 @@
+{
+    "name": "vscode-json-editor",
+    "displayName": "vscode-json-editor",
+    "description": "Generate a tree view editor of the active JSON document",
+    "version": "0.0.1",
+    "publisher": "nickdemayo",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:json",
+        "onCommand:vscode-json-editor.start"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-json-editor.start",
+                "title": "Start JSON editor session",
+                "category": "JSON editor"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "aqua": "^1.0.1",
+        "tslint": "^5.8.0",
+        "tslint-microsoft-contrib": "^5.0.3",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
+    },
+    "dependencies": {
+        "jsoneditor": "^5.17.1"
+    }
+}
