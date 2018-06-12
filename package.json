@@ -10,11 +10,22 @@
     "categories": [
         "Other"
     ],
+    "homepage": "https://github.com/sunmorgus/vscode-json-editor",
+    "keywords": [
+        "json",
+        "editor",
+        "tree",
+        "preview"
+    ],
     "activationEvents": [
         "onLanguage:json",
         "onCommand:vscode-json-editor.start"
     ],
     "main": "./out/src/extension",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sunmorgus/vscode-json-editor.git"
+    },
     "contributes": {
         "commands": [
             {
@@ -40,7 +51,5 @@
         "typescript": "^2.6.1",
         "vscode": "^1.1.6"
     },
-    "dependencies": {
-        "jsoneditor": "^5.17.1"
-    }
+    "dependencies": {}
 }
