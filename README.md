@@ -6,15 +6,19 @@ A vscode extension to preview and edit JSON documents in a simple tree view, bas
 
 - Tree view updates automatically when you save the active document
 
-    ![editor2tree](screenshots/editor2tree.gif)
+    ![editor2tree](https://i.imgur.com/w0KI7QW.gif)
 
 - Properties/values can edited in the tree view, which updates the active json document
 
-    ![tree2editor](screenshots/tree2editor.gif)
+    ![tree2editor](https://i.imgur.com/t7aPUTf.gif)
 
 - Tree view supports searching, expand/collapse all, and undo/redo
 
-    ![expandcollapsesearch](screenshots/expandcollapsesearch.gif)
+    ![expandcollapsesearch](https://i.imgur.com/qa1hYbu.gif)
+
+## Known Issues
+
+1. Editing large json files (>1mb) from the tree view can sometimes cause edits to be lost or not fully synced.
 
 ## Contributions
 
