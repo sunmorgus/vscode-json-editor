@@ -4,6 +4,10 @@ All notable changes to the "vscode-json-editor" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.4]
+
+- Make updating the editor from the tree a bit more consistent
+
 ## [0.0.3]
 
 - Fix borked icon

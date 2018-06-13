@@ -2,7 +2,7 @@
     "name": "vscode-json-editor",
     "displayName": "Json Editor",
     "description": "Generate a tree view editor of the active JSON document",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "nickdemayo",
     "engines": {
         "vscode": "^1.24.0"

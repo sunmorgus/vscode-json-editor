@@ -24,6 +24,10 @@ A vscode extension to preview and edit JSON documents in a simple tree view, bas
 
 Users appreciate release notes as you update your extension.
 
+### 0.0.4
+
+- Make updating the editor from the tree a bit more consistent
+
 ### 0.0.3
 
 - Fix borked icon

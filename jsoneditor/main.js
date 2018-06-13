@@ -1,4 +1,5 @@
 const vscode = acquireVsCodeApi();
+var updateEditorTimeout = undefined;
 
 // create the editor
 var container = document.getElementById("jsoneditor");
@@ -8,13 +9,16 @@ var options = {
         alert(err.toString());
     },
     onChange: function () {
-        console.log("changed: ");
+        if (updateEditorTimeout) {
+            clearTimeout(updateEditorTimeout);
+        }
+
         var json = JSON.stringify(editor.get(), null, 2);
-        setTimeout(() => {
+        updateEditorTimeout = setTimeout(() => {
             vscode.postMessage({
                 json: json
             });
-        }, 100);
+        }, 500);
     }
 };
 const editor = new JSONEditor(container, options);
