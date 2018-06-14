@@ -34,7 +34,21 @@
                 "title": "Start JSON editor session",
                 "category": "JSON editor"
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Json Editor",
+            "properties": {
+                "vscode-json-editor.theme": {
+                    "type": "string",
+                    "default": "light",
+                    "description": "Set the theme for the editor ('light', 'dark'). Note: you must close/reopen any existing editors for the change to take effect.",
+                    "enum": [
+                        "light",
+                        "dark"
+                    ]
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
