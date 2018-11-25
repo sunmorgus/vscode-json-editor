@@ -4,6 +4,11 @@ All notable changes to the "vscode-json-editor" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.2.2]
+
+- Updated to latest jsoneditor release
+- Improved jsoneditor -> editor update times
+
 ## [0.2.1]
 
 - Tweaked the background color for the dark theme to better match vscode's defualt

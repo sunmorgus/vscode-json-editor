@@ -30,6 +30,11 @@ A vscode extension to preview and edit JSON documents in a simple tree view, bas
 
 ## Release Notes
 
+### 0.2.2
+
+- Updated to latest jsoneditor release
+- Improved jsoneditor -> editor update times
+
 ### 0.2.1
 
 - Tweaked the background color for the dark theme to better match vscode's defualt
