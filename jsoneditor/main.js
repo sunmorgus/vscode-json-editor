@@ -1,29 +1,26 @@
 const vscode = acquireVsCodeApi();
-var updateEditorTimeout = undefined;
 
 // create the editor
-var container = document.getElementById("jsoneditor");
+const container = document.getElementById("jsoneditor");
 container.style.height = window.innerHeight + "px";
-var options = {
+
+const options = {
+    mode: 'tree',
     onError: function (err) {
         alert(err.toString());
     },
-    onChange: function () {
-        if (updateEditorTimeout) {
-            clearTimeout(updateEditorTimeout);
-        }
-
-        var json = JSON.stringify(editor.get(), null, 2);
-        updateEditorTimeout = setTimeout(() => {
-            vscode.postMessage({
-                json: json
-            });
-        }, 500);
+    onChangeJSON: function (json) {
+        const jsonString = JSON.stringify(json, null, 2);
+        vscode.postMessage({
+            json: jsonString
+        });
     }
 };
+
 const editor = new JSONEditor(container, options);
 
 window.addEventListener('message', event => {
     const message = event.data; // The JSON data our extension sent
-    editor.set(JSON.parse(message.json));
+    const json = JSON.parse(message.json);
+    editor.update(json);
 });
