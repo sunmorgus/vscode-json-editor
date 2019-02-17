@@ -4,6 +4,10 @@ All notable changes to the "vscode-json-editor" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.2.3]
+
+- Updated to the latest jsoneditor release
+
 ## [0.2.2]
 
 - Updated to latest jsoneditor release
