@@ -1,7 +1,9 @@
 # Json Editor
 
 A vscode extension to preview and edit JSON documents in a simple tree view, based on <https://jsoneditoronline.org>.
-
+##
+To start open the command pallete and type `json`.
+`View>Command Palette> JSON Editor: Start JSON editor session`
 ## Features
 
 - Tree view updates automatically when you save the active document
