@@ -2,6 +2,24 @@
 
 A vscode extension to preview and edit JSON documents in a simple tree view, based on <https://jsoneditoronline.org>.
 
+## Configuration
+
+The theme of the extension has to be matched to the used vs code theme manually.
+Set the theme for the editor ('light', 'dark').
+
+Note: you must close/reopen any existing editors for the change to take effect.
+
+To use a light layout use:
+```
+"vscode-json-editor.theme": "light",
+ "workbench.colorTheme": "Quiet Light", // or other themes with white
+```
+To use a dark layout use:
+```
+  "vscode-json-editor.theme": "dark",
+  "workbench.colorTheme": "Visual Studio Dark", // or other themes with dark background
+```
+
 ## Features
 
 - Tree view updates automatically when you save the active document
@@ -16,9 +34,9 @@ A vscode extension to preview and edit JSON documents in a simple tree view, bas
 
     ![expandcollapsesearch](https://i.imgur.com/qa1hYbu.gif)
 
-## Configuration
 
-- `vscode-json-editor.theme`: Set the theme for the editor ('light', 'dark'). Note: you must close/reopen any existing editors for the change to take effect.
+
+- `vscode-json-editor.theme`: 
 
 ## Known Issues
 
