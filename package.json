@@ -32,9 +32,22 @@
             {
                 "command": "vscode-json-editor.start",
                 "title": "Start JSON editor session",
-                "category": "JSON editor"
+                "category": "JSON editor",
+                "icon": {
+                    "light": "./resources/json-light.svg",
+                    "dark": "./resources/json-dark.svg"
+                }
             }
         ],
+        "menus": {
+            "editor/title": [
+                {
+                    "when": "editorLangId == json",
+                    "command": "vscode-json-editor.start",
+                    "group": "navigation"
+                }
+            ]
+        },
         "configuration": {
             "title": "Json Editor",
             "properties": {
