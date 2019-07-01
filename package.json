@@ -40,6 +40,13 @@
             }
         ],
         "menus": {
+            "explorer/context": [
+                {
+                    "when": "resourceExtname == .json",
+                    "command": "vscode-json-editor.start",
+                    "group": "navigation"
+                }
+            ],
             "editor/title": [
                 {
                     "when": "editorLangId == json",
