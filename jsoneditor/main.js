@@ -2,10 +2,8 @@ const vscode = acquireVsCodeApi();
 
 // create the editor
 const container = document.getElementById("jsoneditor");
-container.style.height = window.innerHeight + "px";
 
 const options = {
-    mode: 'tree',
     onError: function (err) {
         alert(err.toString());
     },
